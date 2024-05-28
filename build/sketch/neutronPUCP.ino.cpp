@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
 #include <Wire.h>
 #include <RTClib.h>
 #include "FS.h"
@@ -21,6 +23,17 @@ const int interruptPin1 = 34;
 const int interruptPin2 = 35;
 unsigned long lastHourTimestamp = 0;
 
+#line 34 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
+void setup();
+#line 94 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
+void loop();
+#line 112 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
+void logData(DateTime now);
+#line 129 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
+void writeFile(fs::FS &fs, const char *path, const char *message);
+#line 146 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
+void appendFile(fs::FS &fs, const char *path, const char *message);
+#line 24 "c:\\Users\\RCHAN\\OneDrive - UNIVERSIDAD NACIONAL DE INGENIERIA\\IPEN\\Arduino\\neutronPUCP\\neutronPUCP.ino"
 void IRAM_ATTR handleInterrupt1() {
   pulseCount1++;
 }

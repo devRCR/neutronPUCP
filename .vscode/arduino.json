@@ -1,7 +1,8 @@
 {
-    "board": "esp32:esp32:esp32doit-devkit-v1",
-    "port": "COM3",
-    "programmer": "esptool",
+    "sketch": "neutronPUCP.ino",
+    "output": "build",
     "configuration": "FlashFreq=80,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
-    "sketch": "neutronPUCP.ino"
+    "board": "esp32:esp32:esp32doit-devkit-v1",
+    "programmer": "esptool",
+    "port": "COM5"
 }
